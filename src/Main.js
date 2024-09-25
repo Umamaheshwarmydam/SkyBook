@@ -20,19 +20,19 @@ function Main() {
 
   return (
     <div className="position-relative vh-100 vw-100">
-      <nav className="navbar navbar-light bg-primary">
+      <nav className="navbar navbar-light bg-dark shadow rounded">
         <div className="container-fluid">
           <div className="navbar-brand">
             <img src='skylogo1.png' alt='' width='120' height='50' />
           </div>
           <div className="d-flex">
-            <a className="nav-link me-5" href="/Main">Home</a>
-            <a className="nav-link me-5" href="/Flight">Flights</a>
+            <a className="nav-link mt-1 me-5 text-white btn btn-outline-secondary btn-sm mt-1" href="/Main">Home</a>
+            <a className="nav-link mt-1 me-5 text-white" href="/Flight">Flights</a>
             <button className="btn btn-success me-5">
-              <a className="nav-link text-white" href="/login">Log In</a>
+              <a className="nav-link text-white mt-1" href="/login">Log In</a>
             </button>
-            <button className="btn btn-dark me-5">
-              <a className="nav-link text-white" href="/Signup">Sign Up</a>
+            <button className="btn btn-primary me-5">
+              <a className="nav-link text-white mt-1" href="/Signup">Sign Up</a>
             </button>
           </div>
         </div>

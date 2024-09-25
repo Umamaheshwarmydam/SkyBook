@@ -29,11 +29,12 @@ const FlightForm = () => {
   };
 
   return (    
-    <div className="container mt-5">
+    <div className="d-flex container mt-5">
     <nav className="navbar navbar-expand-lg navbar-dark position-absolute bg-dark w-100 start-0 top-0">
         <div className="container-fluid">
-        <Link to='/' className="navbar-brand">
-          <img src='Home.png' alt='Home' width='50' height='50' />
+        <img src='skylogo1.png' alt='' width='120' height='50' />
+        <Link to='/' className="navbar-brand ms-auto">
+          <img className="" src='Home.png' alt='Home' width='50' height='50' />
         </Link>
       </div>
     </nav>
@@ -82,7 +83,7 @@ const FlightForm = () => {
               <p className="card-text">Arrival: {flight.arrival.airport}</p>
               <p className="card-text">Status: {flight.flight_status}</p>
             </div>
-            <div className="col-md-6 text-md-right">
+            <div className="col-md-6 text-md-right mt-2">
               <p className="card-text">Scheduled Departure: {new Date(flight.departure.scheduled).toLocaleString()}</p>
               <p className="card-text">Scheduled Arrival: {new Date(flight.arrival.scheduled).toLocaleString()}</p>
             </div>
